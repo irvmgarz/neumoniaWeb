@@ -1,0 +1,15 @@
+<!-- En templates/ver_imagenes.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Imágenes</title>
+</head>
+<body>
+    <h2>Imágenes Subidas</h2>
+    {% for imagen in imagenes %}
+        <img src="{{ imagen.imagen.url }}" alt="Imagen">
+    {% endfor %}
+</body>
+</html>
